@@ -1,0 +1,14 @@
+
+    <div class="left-side-info">
+        <p class="countries-list-item">Capital: {{capital}}</p>
+        <p class="countries-list-item">Population: {{population}}</p>
+        <ul class="lang-list">
+            <h2 class="list-title">Languages:</h2>
+            {{#each languages}} 
+            <li>{{this.name}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="right-side-info">
+        <img class="countries-list-img" src="{{flag}}"/>
+    </div>
